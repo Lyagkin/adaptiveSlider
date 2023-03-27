@@ -1,0 +1,33 @@
+.slider {
+  max-width: 82.5rem;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  &-line {
+    display: flex;
+    transition: transform 1s;
+  }
+  &-arrowLeft, &-arrowRight {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  &-arrowRight {
+    right: 1%;
+    left: auto;
+  }
+
+.dots-wrapper {
+  width: 15rem;
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+}
+
